@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="CSI-200_BoneCuttingToolFullAssy_V4_URDF">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.195542761308929 -0.0543004566173789 -0.00311358705126816"
+        rpy="0 0 0" />
+      <mass
+        value="2.82497847633582" />
+      <inertia
+        ixx="0.000691365018399165"
+        ixy="-7.21989726832368E-06"
+        ixz="-8.28623313768042E-06"
+        iyy="0.00220366922516715"
+        iyz="9.93940688552824E-06"
+        izz="0.0021607307802539" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="0.0101457727235753 -1.38937210070189E-08 1.73744119369434E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.000801545700671476" />
+      <inertia
+        ixx="4.87957028547107E-09"
+        ixy="8.24174385783391E-15"
+        ixz="5.49944055996202E-15"
+        iyy="4.45101627891487E-08"
+        iyz="-2.78849773361008E-15"
+        izz="4.8971339648408E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="-0.0041346 -4.838E-08 1.8992E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0033683" />
+      <inertia
+        ixx="8.7289E-08"
+        ixy="-4.858E-14"
+        ixz="-2.9376E-13"
+        iyy="2.1214E-07"
+        iyz="-3.2726E-09"
+        izz="2.175E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_2"
+    type="revolute">
+    <origin
+      xyz="0.028 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-0.0102371819343171 -6.95258367544582E-09 6.79990827257004E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.000776703550787097" />
+      <inertia
+        ixx="4.54352451091879E-09"
+        ixy="-8.73669351483935E-14"
+        ixz="-1.17844997889738E-14"
+        iyy="4.07691636249048E-08"
+        iyz="2.11595273770962E-14"
+        izz="4.49040530272986E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_3"
+    type="revolute">
+    <origin
+      xyz="0.02 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-0.00413458669102168 -5.31176039264558E-08 1.89923374249723E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.00336830557166159" />
+      <inertia
+        ixx="8.7289371529378E-08"
+        ixy="-5.08154165546928E-14"
+        ixz="-1.65928902421146E-13"
+        iyy="2.12140667540327E-07"
+        iyz="-3.27257912690215E-09"
+        izz="2.1749531315581E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_4"
+    type="revolute">
+    <origin
+      xyz="0.008 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="-0.00976281806568305 6.95260793381891E-09 6.7999082947745E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.000776703550787119" />
+      <inertia
+        ixx="4.54352451091898E-09"
+        ixy="-8.73669258551938E-14"
+        ixz="1.17844997507639E-14"
+        iyy="4.07691636249061E-08"
+        iyz="-2.11595273789002E-14"
+        izz="4.49040530272999E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_5"
+    type="revolute">
+    <origin
+      xyz="0.02 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="-0.0041346 -5.4614E-08 1.8992E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0033683" />
+      <inertia
+        ixx="8.7289E-08"
+        ixy="-6.1181E-14"
+        ixz="-9.4893E-14"
+        iyy="2.1214E-07"
+        iyz="-3.2726E-09"
+        izz="2.175E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_6"
+    type="revolute">
+    <origin
+      xyz="0.008 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_7">
+    <inertial>
+      <origin
+        xyz="-0.0101457727235751 1.38937032434505E-08 1.737441177041E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.000801545700671478" />
+      <inertia
+        ixx="4.87957028547109E-09"
+        ixy="8.24176223841101E-15"
+        ixz="-5.49944063782202E-15"
+        iyy="4.45101627891479E-08"
+        iyz="2.78849774344208E-15"
+        izz="4.89713396484073E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_7"
+    type="revolute">
+    <origin
+      xyz="0.02 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_6" />
+    <child
+      link="link_7" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_8">
+    <inertial>
+      <origin
+        xyz="-0.00413459043224676 -5.42795224878212E-08 1.89923382576396E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.00336830557166155" />
+      <inertia
+        ixx="8.72893847155127E-08"
+        ixy="-5.77927943524461E-14"
+        ixz="-1.14282567555678E-13"
+        iyy="2.12140654354189E-07"
+        iyz="-3.27258604345153E-09"
+        izz="2.17495313155808E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_8"
+    type="revolute">
+    <origin
+      xyz="0.008 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_7" />
+    <child
+      link="link_8" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_9">
+    <inertial>
+      <origin
+        xyz="-0.0101457727235744 1.38935972171517E-08 1.73744119369434E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.000801545700671512" />
+      <inertia
+        ixx="4.87957028547128E-09"
+        ixy="8.24175386493798E-15"
+        ixz="-5.49944063220866E-15"
+        iyy="4.45101627891502E-08"
+        iyz="2.78849776675144E-15"
+        izz="4.89713396484096E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/link_9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_9"
+    type="revolute">
+    <origin
+      xyz="0.02 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_8" />
+    <child
+      link="link_9" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="jaw">
+    <inertial>
+      <origin
+        xyz="-0.0162494788517108 0.00970487538356685 -5.29411001148894E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.0203919851208377" />
+      <inertia
+        ixx="7.44462850114211E-07"
+        ixy="1.14189498281302E-07"
+        ixz="1.80284060821887E-12"
+        iyy="5.57865257909692E-07"
+        iyz="-2.2650481430213E-09"
+        izz="9.15710154261717E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/jaw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CSI-200_BoneCuttingToolFullAssy_V4_URDF/meshes/jaw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jaw"
+    type="fixed">
+    <origin
+      xyz="0.039 -0.0105 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_9" />
+    <child
+      link="jaw" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
